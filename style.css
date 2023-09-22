@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto+Mono&display=swap');
+
+body{
+    background-color: #F6D98F;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: max-content;
+}
+
+.eu{
+    background-image:url( );
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #833E5B;
+    text-align: center;
+}
+
+.eeu{
+    float: right;
+}
+h1{
+    font-size: 100px;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+    color: #833E5B;
+}
+
+h3{
+     font-size: 25px;
+     font-family: 'Orbitron', sans-serif;
+     color: #CC979F;
+}
+
+h4{
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+    color: #3C4A79;
+}
+
+p{
+    color: #833E5B;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.desc{
+    font-size: 17px;
+    text-align: center;
+    color:#181D3B;
+    font-family: 'Roboto Mono', monospace;
+}
+ 
+.barrinha{
+    width: 100%;
+    align-items: center;
+}
+
+
+li{
+    font-size: 24.5px;
+    list-style: none;
+    float: left;
+    margin: 10px 10px 20px 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: #3C4A79;
+    transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  }
+  
+a:hover {
+    text-decoration: none;
+    color: #A6A9C8;
+  }
+
+#botao{
+    background-color:#181D3B;
+    border: 5px white solid;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  }
+
+#botao:hover{
+    text-decoration: none;
+    background-color: #A6A9C8;
+    color:#181D3B;
+}  
+
+.apresentacao{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    color:#181D3B;
+}
+
+.projeto{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #3C4A79;
+    color:#F6D98F;
+    font-size: 17px;
+    display:block;
+    float: left;
+    width: 50%;
+    height: 35%;
+}
+
+.demonstracao{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 13px;
+    object-fit: cover;
+    border-radius: 1,5cm;
+    align-self: center;
+}
+
+.paracontato{
+   
+    font-family: 'Roboto Mono', monospace;
+    color: #833E5B;
+    float: left;
+    font-size: 23px;
+    text-align: center;
+}
+
+.curriculum{
+    background-color: #F6D98F;
+    font-family: 'Roboto Mono', monospace;
+    color: #181D3B;
+    float: left;
+    font-size: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+footer{
+    background-color:#181D3B;
+    font-family: 'Roboto Mono', monospace;
+    color: #F6D98F;
+    float: left;
+    font-size: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+#barra{
+    height: 50px;
+}
+
+form{
+    font-family: 'Roboto Mono', monospace;
+    color: #181D3B;
+    align-self: center;
+    font-size: 30px;
+    border-radius: 25px;
+}
