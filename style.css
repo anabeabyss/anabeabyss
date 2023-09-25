@@ -62,7 +62,7 @@ barrinha{
 
 
 li{
-    font-size: 24.5px;
+    font-size: 30px;
     list-style: none;
     align-self: center;
     float: left;
@@ -113,7 +113,7 @@ a:hover {
     height: 560px;
     float: left;
     margin-left: 2,5px;
-    margin: 65px;
+    margin: 45px;
     padding: 10px;
     box-sizing: border-box;
     padding: 7,5px;
@@ -121,13 +121,14 @@ a:hover {
 }
 
 .demonstracao{
-    height: 350px;
-    width: 350px;
+    height: 290px;
+    width: 290px;
     margin: 10px;
     float: center;
     border-radius: 1,5cm;
     border-color: #833E5B;
     border-width: 4,5px;
+    
 }
 
 .icon{
@@ -160,7 +161,6 @@ footer{
     background-color:#181D3B;
     font-family: 'Roboto Mono', monospace;
     color: #F6D98F;
-    float: left;
     font-size: 18,5px;
     text-align: center;
     width: 100%;
