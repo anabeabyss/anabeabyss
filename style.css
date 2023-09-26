@@ -51,6 +51,12 @@ p{
     font-family: 'Roboto Mono', monospace;
 }
 
+.barrinha{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
 li{
     font-size: 30px;
     list-style: none;
@@ -93,11 +99,26 @@ a:hover {
     color:#181D3B;
 }
 
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .projeto{
     font-family: 'Roboto Mono', monospace;
     background-color: #3C4A79;
     color:#F6D98F;
     font-size: 20px;
+    margin: 10px 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 47%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .demonstracao{
@@ -118,7 +139,7 @@ a:hover {
    
     font-family: 'Roboto Mono', monospace;
     color: #833E5B;
-    width: 100%;
+    
     font-size: 23px;
     text-align: center;
 }
@@ -127,11 +148,6 @@ a:hover {
     font-family: 'Roboto Mono', monospace;
     color: #181D3B;
     font-size: 23px;
-    text-align: center;
-    width: 100%;
-}
-
-.links{
     text-align: center;
 }
 
