@@ -35,7 +35,7 @@ h3{
 h4{
     font-size: 15px;
     font-family: 'Orbitron', sans-serif;
-    color: #3C4A79;
+    color: #833E5B;
 }
 
 p{
@@ -45,9 +45,9 @@ p{
 }
 
 .desc{
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
-    color:#181D3B;
+    color: #F6D98F;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -76,11 +76,10 @@ a:link {
   
 a:hover {
     text-decoration: none;
-    color: #A6A9C8;
+    color: #d7d9f0;
   }
 
 #botao{
-    background-color:#181D3B;
     border: 5px white solid;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
@@ -95,8 +94,12 @@ a:hover {
 
 .apresentacao{
     font-family: 'Roboto Mono', monospace;
-    font-size: 17px;
+    font-size: 23px;
     color:#181D3B;
+}
+
+.intro{
+    text-align: center;
 }
 
 .row2{
@@ -107,14 +110,14 @@ a:hover {
 
 .projeto{
     font-family: 'Roboto Mono', monospace;
-    background-color: #3C4A79;
+    background-color:#181D3B;
     color:#F6D98F;
     font-size: 20px;
     margin: 10px 10px;
     padding: 10px;
     box-sizing: border-box;
     width: 47%;
-    height: 25%;
+    min-height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,16 +125,16 @@ a:hover {
 }
 
 .demonstracao{
-    height: 290px;
-    width: 290px;
-    margin: 10px;
-    border-width: 4,5px;
+    height: 240px;
+    width: 240px;
+    margin-top: 10px;
+    border-width: 4.5px;
     align-self: center;
 }
 
 .icon{
-    height:30px;
-    width: 30px;
+    height:50px;
+    width: 50px;
     float: left;
 }
 
@@ -155,9 +158,15 @@ footer{
     background-color:#181D3B;
     font-family: 'Roboto Mono', monospace;
     color: #F6D98F;
-    font-size: 18,5px;
-    text-align: center;
+    font-size: 18.5px;
     width: 100%;
+    text-align: center;
+}
+
+.links{
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
 }
 
 
@@ -165,7 +174,23 @@ form{
     font-family: 'Roboto Mono', monospace;
     color: #181D3B;
     text-align: center;
-    float:right;
-    font-size: 15px;
+    font-size: 25px;
+    width: 70%;
+    height: 70%;
+}
+
+input{
+    background-color: #A6A9C8;
     border-radius: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#barra{
+    background-color:#A6A9C8;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #F6D98F;
 }
