@@ -11,22 +11,18 @@
         <ul>
             <li><a href="index.html">Retornar</a></li>
         </ul>
-    <h4>Por favor insira as informações a seguir. Elas são para checar quem acessa o currículo.</h4>  
+    <h1 id="disclaimer">Por favor insira as informações a seguir. Elas são para checar quem acessa o currículo.</h1>  
 </header>
-<form>  
-     <label for="nome">Nome:</label>
-     <input type="text" id="nome" name="nome" required><br>
-     <label for="snome">Sobrenome:</label>
-     <input type="text" id="snome" name="snome" required><br>
-     <span id="age"><label for="idade">Idade:</label></span>
-     <input type="number" id="idade" name="idade" required><br>
-     <label for="mail">Email:</label>
-     <input type="email" id="mail" name="mail"><br>
-     <label for="gith">GitHub:</label>
-     <input type="text" id="gith" name="gith"><br>
-     <label for="numero">Telefone:</label>
-     <input type="tel" id="numero" name="numero" pattern="[11-99]{2}-[0-9]{5}-[0-9]{4}"><br><br>
-     <input type="submit" value="Submit">
+<form action="https://formsubmit.co/corvidaeabff@gmail.com" method="POST" />
+
+     <input placeholder="Nome" type="text" id="nome" name="nome" required>
+     <input placeholder="Sobrenome" type="text" id="snome" name="snome" required>
+     <input placeholder="Sua idade" type="number" id="idade" name="idade" required>
+     <input placeholder="Email" type="email" id="mail" name="mail" required>
+     <input placeholder="Github(opcional)" type="text" id="gith" name="gith"><br><br>
+     <textarea placeholder="Digite sua mensagem." name="msg" class="mensagem" rows="10">
+     </textarea>
+     <button type="submit" id="enviar">Enviar</button>
 </form>   
 </body>
 </html>
