@@ -8,32 +8,23 @@
 </head>
 <body>
 <header id="barra">
-        <ul>
-            <li id="retornar"><a href="index.html">Retornar</a></li>
-        </ul>
     <h1 id="disclaimer">Por favor insira as informações a seguir. Elas são para checar quem acessa o currículo.</h1>  
+    <a id="voltar" href="index.html">Retornar</a>
 </header>
+<div class="forml centralizar">
 <form action="https://formsubmit.co/corvidaeabff@gmail.com" method="POST">
   <div class="linha">
      <input placeholder="Nome "type="text" id="nome" name="nome" value="Seu Nome" required>
-  </div>
-  <div class="linha">
      <input placeholder="Sobrenome" type="text" id="snome" name="snome" value="Seu Sobrenome" required>
-    </div>   
-  <div class="linha">  
      <input placeholder="Sua idade" type="number" id="idade" name="idade" value="Sua Idade" required>
-    </div>
-  <div class="linha">
-     <input placeholder="Email" type="email" id="mail" name="mail" value="Email" required>
-    </div>
-  <div class="linha">   
+     <input placeholder="Email" type="email" id="mail" name="mail" value="Email" required>   
      <input placeholder="Github(opcional)" type="text" id="gith" name="gith" value="Github"><br><br>
     </div>
   <div class="texto">
-     <textarea placeholder="Digite sua mensagem." name="msg" class="mensagem" rows="10" style="height:200px">
-     </textarea>
+     <textarea placeholder="Digite sua mensagem." name="msg" class="mensagem" rows="10" style="height:200px">Escreva uma mensagem!</textarea><br><br>
   </div>   
      <button type="submit" id="enviar" value="Submit">Enviar</button>
+  </form>   
 </form>   
 </body>
 </html>
