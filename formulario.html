@@ -13,15 +13,20 @@
 </header>
 <div class="forml centralizar">
 <form action="https://formsubmit.co/corvidaeabff@gmail.com" method="POST">
-  <div class="linha">
-     <input placeholder="Nome "type="text" id="nome" name="nome" value="Seu Nome" required>
-     <input placeholder="Sobrenome" type="text" id="snome" name="snome" value="Seu Sobrenome" required>
-     <input placeholder="Sua idade" type="number" id="idade" name="idade" value="Sua Idade" required>
-     <input placeholder="Email" type="email" id="mail" name="mail" value="Email" required>   
-     <input placeholder="Github(opcional)" type="text" id="gith" name="gith" value="Github"><br><br>
-    </div>
-  <div class="texto">
-     <textarea placeholder="Digite sua mensagem." name="msg" class="mensagem" rows="10" style="height:200px">Escreva uma mensagem!</textarea><br><br>
+  <div class="linha centralizar">
+   <label for="nome">Nome:</label>
+     <input placeholder="Nome "type="text" id="nome" name="nome" required>
+     <label for="snome">Sobrenome:</label>
+     <input placeholder="Sobrenome" type="text" id="snome" name="snome" required>
+   </div>
+   <div class="linha centralizar">
+     <label for="idade">Idade:</label>  
+     <input placeholder="Idade" type="number" id="idade" name="idade" required>
+     <label for="mail">Email:</label>
+     <input placeholder="Email" type="email" id="mail" name="mail" value="Email" required> 
+   </div><br>
+  <div class="texto centralizar">
+     <textarea placeholder="Digite sua mensagem." name="msg" class="mensagem" rows="10" style="height:200px">Escreva uma mensagem!</textarea><br>
   </div>   
      <button type="submit" id="enviar" value="Submit">Enviar</button>
   </form>   
