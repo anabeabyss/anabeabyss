@@ -30,7 +30,7 @@
   </div>   
      <input type="submit" id="envio" value="Enviar" hidden>
 </form>   
-<button onclick="document.location='index.html'" id="enviar">Enviar</button>
+<button id="enviar">Enviar</button>
 
 <script>
    const baixarPdf = document
@@ -47,7 +47,12 @@
             document.documentElement.appendChild(element);
             element.click();
             enviarForm.click();
-        });
+            
+            document.getElementById("enviar").addEventListener("click", myFunction);  
+           function myFunction() {  
+           window.location.href="index.html";  
+           }
+          });
   
 </script>
 </body>
