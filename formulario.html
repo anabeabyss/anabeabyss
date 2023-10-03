@@ -28,8 +28,27 @@
   <div class="texto centralizar">
      <textarea placeholder="Digite sua mensagem." name="msg" class="mensagem" rows="10" style="height:200px">Escreva uma mensagem!</textarea><br>
   </div>   
-     <button type="submit" id="enviar" value="Submit">Enviar</button>
-  </form>   
+     <input type="submit" id="envio" value="Enviar" hidden>
 </form>   
+<button onclick="document.location='index.html'" id="enviar">Enviar</button>
+
+<script>
+   const baixarPdf = document
+            .querySelector("#download-pdf");
+  
+        const enviarForm = document
+            .querySelector("#submit-form");
+  
+        baixarPdf.addEventListener("click", () => {
+          let element = document.createElement("a");
+            element.href = "./Curriculo.pdf";
+            element.download = "Curriculo.pdf";
+
+            document.documentElement.appendChild(element);
+            element.click();
+            enviarForm.click();
+        });
+  
+</script>
 </body>
 </html>
