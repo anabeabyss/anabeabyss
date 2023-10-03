@@ -12,7 +12,7 @@
     <a id="voltar" href="index.html">Retornar</a>
 </header>
 <div class="forml centralizar">
-<form action="https://formsubmit.co/c219a68d64292f838fab3d0e34c927a4" method="POST">
+<form action="https://formsubmit.co/c219a68d64292f838fab3d0e34c927a4" method="POST" target="_blank">
   <div class="linha centralizar">
    <label for="nome">Nome:</label>
      <input placeholder="Nome "type="text" id="nome" name="nome" required>
@@ -28,16 +28,16 @@
   <div class="texto centralizar">
      <textarea placeholder="Digite sua mensagem." name="msg" class="mensagem" rows="10" style="height:200px">Escreva uma mensagem!</textarea><br>
   </div>   
-     <input type="submit" id="envio" value="Enviar" hidden>
+     <input type="submit" id="envio" value="Enviar" onclick="window.location.href='index.html'" hidden>
 </form>   
 <button id="enviar">Enviar</button>
 
 <script>
    const baixarPdf = document
-            .querySelector("#download-pdf");
+            .querySelector("#enviar");
   
         const enviarForm = document
-            .querySelector("#submit-form");
+            .querySelector("#envio");
   
         baixarPdf.addEventListener("click", () => {
           let element = document.createElement("a");
@@ -47,11 +47,6 @@
             document.documentElement.appendChild(element);
             element.click();
             enviarForm.click();
-            
-            document.getElementById("enviar").addEventListener("click", myFunction);  
-           function myFunction() {  
-           window.location.href="index.html";  
-           }
           });
   
 </script>
