@@ -12,7 +12,7 @@
     <a id="voltar" href="index.html">Retornar</a>
 </header>
 <div class="forml centralizar">
-<form action="https://formsubmit.co/c219a68d64292f838fab3d0e34c927a4" method="POST" target="_blank">
+<form action="https://formsubmit.co/c219a68d64292f838fab3d0e34c927a4" method="POST">
   <div class="linha centralizar">
    <label for="nome">Nome:</label>
      <input placeholder="Nome "type="text" id="nome" name="nome" required>
@@ -33,23 +33,22 @@
 <button id="enviar">Enviar</button>
 
 <script>
-   const baixarPdf = document
-            .querySelector("#enviar");
-  
-        const enviarForm = document
-            .querySelector("#envio");
-  
-        baixarPdf.addEventListener("click", () => {
-          let element = document.createElement("a");
-            element.href = result;
-            element.download = 'Curriculo.pdf'
-            element.click();
+  const baixarPdf = document
+           .querySelector("#enviar");
+ 
+  const enviarForm = document
+           .querySelector("#envio");
+           
+       baixarPdf.addEventListener("click", () => {
+         let element = document.createElement("a");
+           element.href = './Curriculo.pdf';
+           element.download = 'Curriculo.pdf'
+           element.click();
 
-            document.documentElement.appendChild(element);
-            element.click();
-            enviarForm.click();
-          });
-  
+           document.documentElement.appendChild(element);
+           element.click();
+           enviarForm.click();
+       });
 </script>
 </body>
 </html>
