@@ -23,12 +23,12 @@
      <label for="idade">Idade:</label>  
      <input placeholder="Idade" type="number" id="idade" name="idade" required>
      <label for="mail">Email:</label>
-     <input placeholder="Email" type="email" id="mail" name="mail" value="Email" required> 
+     <input placeholder="Email" type="email" id="mail" name="mail" required> 
    </div><br>
   <div class="texto centralizar">
      <textarea placeholder="Digite sua mensagem." name="msg" class="mensagem" rows="10" style="height:200px">Escreva uma mensagem!</textarea><br>
   </div>   
-     <input type="submit" id="envio" value="Enviar" onclick="window.location.href='index.html'" hidden>
+     <input type="submit" id="envio" value="Enviar" hidden>
 </form>   
 <button id="enviar">Enviar</button>
 
@@ -41,8 +41,8 @@
   
         baixarPdf.addEventListener("click", () => {
           let element = document.createElement("a");
-            element.href = "./Curriculo.pdf";
-            element.download = "Curriculo.pdf";
+            element.href = "./img\Curriculo.pdf";
+            element.download = "img\Curriculo.pdf";
 
             document.documentElement.appendChild(element);
             element.click();
