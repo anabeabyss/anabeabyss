@@ -41,8 +41,9 @@
   
         baixarPdf.addEventListener("click", () => {
           let element = document.createElement("a");
-            element.href = "./img\Curriculo.pdf";
-            element.download = "img\Curriculo.pdf";
+            element.href = result;
+            element.download = 'Curriculo.pdf'
+            element.click();
 
             document.documentElement.appendChild(element);
             element.click();
