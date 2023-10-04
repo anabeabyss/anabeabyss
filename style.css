@@ -40,6 +40,14 @@ header{
     resize: horizontal;
 }
 
+#agradecimento{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    color: #833E5B;
+}
+
 h1{
     font-size: 100px;
     text-align: center;

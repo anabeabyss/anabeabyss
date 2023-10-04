@@ -22,7 +22,7 @@
         <ul class="barrinha">
         <li><a href="#A1">Sobre mim</a></li>
         <li><a href="#A2">Projetos</a></li>
-        <li><a href="formulario.html">Currículo</a></li>
+        <li><a target="_blank" href="formulario.html">Currículo</a></li>
     </ul>         
 </div>     
 </header>
@@ -100,6 +100,7 @@
   <img class="ilust" src="desenhos\tora2.png">
 </div>
 </div>
+</main>
 
 <div class="creditos centralizar">
 <footer>
@@ -110,7 +111,16 @@
       </p>
 </footer>
 </div>
-</main> 
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 <br>
 <br>
 </body>
