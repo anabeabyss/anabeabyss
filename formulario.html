@@ -13,18 +13,30 @@
 </header>
 <div class="forml centralizar">
 <form action="https://formsubmit.co/c219a68d64292f838fab3d0e34c927a4" method="POST">
-  <div class="linha centralizar">
+  <div class="legenda">
    <label for="nome">Nome:</label>
+  </div> 
+   <div class="linha">
      <input placeholder="Nome "type="text" id="nome" name="nome" required>
+     </div>
+     <div class="legenda"> 
      <label for="snome">Sobrenome:</label>
+     </div>
+   <div class="linha">  
      <input placeholder="Sobrenome" type="text" id="snome" name="snome" required>
-   </div>
-   <div class="linha centralizar">
+   </div>  
+   <div class="legenda">
      <label for="idade">Idade:</label>  
+     </div>
+   <div class="linha">  
      <input placeholder="Idade" type="number" id="idade" name="idade" required>
+   </div>  
+   <div class="legenda">
      <label for="mail">Email:</label>
-     <input placeholder="Email" type="email" id="mail" name="mail" required> 
-   </div><br>
+    </div>
+    <div class="linha">
+     <input placeholder="Email" type="email" id="mail" name="mail" required>
+     </div><br>
   <div class="texto centralizar">
      <textarea placeholder="Digite sua mensagem." name="msg" class="mensagem" rows="10" style="height:200px">Escreva uma mensagem!</textarea><br>
   </div>   
@@ -39,7 +51,13 @@
   const enviarForm = document
            .querySelector("#envio");
            
-       baixarPdf.addEventListener("click", () => {
+           baixarPdf.addEventListener("click", () => {
+      let nome = document.getElementById("nome").value;
+      let snome = document.getElementById("snome").value;
+      let idade = document.getElementById("idade").value;
+      let mail = document.getElementById("mail").value;
+
+      if (nome && snome && idade && mail){
          let element = document.createElement("a");
            element.href = './Curriculo.pdf';
            element.download = 'Curriculo.pdf'
@@ -48,6 +66,9 @@
            document.documentElement.appendChild(element);
            element.click();
            enviarForm.click();
+          } else {
+            alert("Por favor, preencha todos os campos antes de baixar o PDF.");
+          }
        });
 </script>
 </body>

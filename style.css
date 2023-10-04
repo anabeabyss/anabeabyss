@@ -9,14 +9,35 @@ body{
     overflow-x: hidden;
 }
 
+#retrato{
+   width: 200;
+   height: 400px;
+   border-radius: 5cm;
+   float: left;
+   padding: 20px;
+   z-index:1 ;
+}
+
+#gradiente{
+ height: 500px;
+ background-image: linear-gradient(#f68fc8,#F6D98F);
+ background-color: #F6D98F;
+ margin-top: none;
+ padding: 50px
+}
+
 header{
     width: 100%;
+    height:auto;
     text-align: center;
 }
 
 .eu{
     font-family: 'Orbitron', sans-serif;
     color: #833E5B;
+    text-align: justify;
+    justify-content: center;
+    resize: horizontal;
 }
 
 h1{
@@ -113,9 +134,11 @@ a:hover {
 }
 
 .col3{
-    width: 33%; 
-    float: left;
+    width: 33.3%; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    float: left;
 }
 
 .projeto{
@@ -147,8 +170,8 @@ a:hover {
 }
 
 .ilust{
-  height: 400px;
-  width: 400px;
+  height: 360px;
+  width: 360px;
   object-fit: cover;
   margin: 9px;
   border-radius: 7.8px;
@@ -253,6 +276,8 @@ button:hover{
 label{
     font-family: 'Roboto Mono', monospace;
     font-size: 25px;
+    color:#833E5B;
+    padding:12px 12px 12px 0;
 }
 
 input[type=text], input[type=email], input[type=number]{
@@ -263,7 +288,8 @@ input[type=text], input[type=email], input[type=number]{
     margin-bottom: 20px;
     border-radius: 10px;
     border-color: #833E5B;
-    color:#181D3B;
+    color: #ffffff;
+    background-color:#181D3B;
     font:20px bold;
     text-align: center;
     resize: vertical;
@@ -290,14 +316,44 @@ textarea{
     color: white;
     font-family: 'Roboto Mono', monospace;
 }
+.legenda{
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+}
+
  .linha{
-    width: 47%;
+    width: 75%;
     height: 80px;
     float: left;
-    margin: 20px 20px 20px 20px;
+    margin-top: 6px;
  } 
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 900px) {
+
+    #retrato{
+        width: 100%;
+        height:50%;
+        padding: 0;
+        object-fit: scale-down;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    .eu{
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .barrinha{
+        width: 100%;
+        float: none;
+        display: block;
+        padding: 0;
+    }
 
     .projeto{
         width: 100%;
@@ -316,20 +372,45 @@ textarea{
       padding: 0;
     }
 
+    .contato{
+        width: 100%;
+        height: 30%;
+        color:#181D3B;
+    }
+
     .sociais{
-        flex-direction: column;
-        justify-content: space-evenly;
-        display: flex;
+        width: 33%;
+        float: left;
+        justify-self: center;
+    }
+
+    .col3{
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .ilust{
+        justify-self: center;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        
     }
   }
 
- @media screen and (max-width: 700px) {
+ @media screen and (max-width: 800px) {
     .linha, input[type=submit], label {
       width: 100%;
-      float: none;
-      margin: 30px;
+      height: 30%;
       justify-self: center;
+      padding: 12px 20px;
+      margin-top: 0;
+      margin-bottom: 5px;
+      float: none;
       text-align: center;
       font-size: 20px;
+      resize: none;
     }
   }
